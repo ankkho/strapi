@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_elements_reviews",
+  "info": {
+    "name": "review",
+    "displayName": "Review",
+    "icon": "star",
+    "description": "Individual customer review/testimonial with rating"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "text": {
+      "type": "text",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "rating": {
+      "type": "integer",
+      "required": true,
+      "default": 5,
+      "min": 1,
+      "max": 5
+    },
+    "avatar": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "title": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "source": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "sourceLogo": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "href": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    }
+  }
+}

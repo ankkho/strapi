@@ -1,0 +1,119 @@
+{
+  "collectionName": "components_sections_hero_carousels",
+  "info": {
+    "name": "hero-carousel",
+    "displayName": "Hero Carousel",
+    "icon": "slideshow",
+    "description": "Carousel hero section with multiple slides, transitions (fade, slide, zoom), and autoplay"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "fade",
+        "slide",
+        "zoom"
+      ],
+      "default": "fade",
+      "required": true
+    },
+    "slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.carousel-slide",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    "height": {
+      "type": "enumeration",
+      "enum": [
+        "auto",
+        "screen",
+        "half",
+        "two-thirds",
+        "third"
+      ],
+      "default": "two-thirds"
+    },
+    "minHeight": {
+      "type": "integer",
+      "default": 500,
+      "min": 0,
+      "max": 2000
+    },
+    "headlineSize": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl",
+        "3xl"
+      ],
+      "default": "xl"
+    },
+    "contentMaxWidth": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl",
+        "3xl",
+        "4xl"
+      ],
+      "default": "3xl"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplayInterval": {
+      "type": "integer",
+      "default": 5000,
+      "min": 1000,
+      "max": 30000
+    },
+    "pauseOnHover": {
+      "type": "boolean",
+      "default": true
+    },
+    "showArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDots": {
+      "type": "boolean",
+      "default": true
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "transitionDuration": {
+      "type": "integer",
+      "default": 500,
+      "min": 100,
+      "max": 2000
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "sectionId": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "ariaLabel": {
+      "type": "string",
+      "default": "Image carousel",
+      "maxLength": 200
+    }
+  }
+}

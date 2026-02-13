@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_elements_breadcrumb_items",
+  "info": {
+    "name": "breadcrumb-item",
+    "displayName": "Breadcrumb Item",
+    "icon": "link",
+    "description": "Individual breadcrumb navigation item with label, URL, and optional icon"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "href": {
+      "type": "string",
+      "required": true,
+      "regex": "^https://.*$"
+    },
+    "icon": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "isCurrentPage": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    }
+  }
+}

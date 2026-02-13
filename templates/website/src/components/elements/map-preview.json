@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_elements_map_previews",
+  "info": {
+    "name": "map-preview",
+    "displayName": "Map Preview",
+    "icon": "pinMap",
+    "description": "Static map preview with location and service area details"
+  },
+  "options": {},
+  "attributes": {
+    "imageUrl": {
+      "type": "string",
+      "required": true,
+      "regex": "^https://.*$"
+    },
+    "alt": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "locationName": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "address": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "cityStateZip": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200
+    },
+    "directionsUrl": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "serviceArea": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200
+    },
+    "phone": {
+      "type": "string",
+      "required": false,
+      "maxLength": 30
+    }
+  }
+}

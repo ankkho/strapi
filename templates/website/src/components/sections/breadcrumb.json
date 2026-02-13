@@ -1,0 +1,75 @@
+{
+  "collectionName": "components_sections_breadcrumbs",
+  "info": {
+    "name": "breadcrumb",
+    "displayName": "Breadcrumb",
+    "icon": "layer",
+    "description": "Navigation breadcrumb component with SEO schema support, icons, and customizable styling"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "simple",
+        "icon",
+        "schema-enabled"
+      ],
+      "default": "simple",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.breadcrumb-item",
+      "required": true,
+      "min": 1,
+      "max": 10
+    },
+    "separator": {
+      "type": "string",
+      "default": "/",
+      "maxLength": 10
+    },
+    "separatorIcon": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "itemClassName": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "activeClassName": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "separatorClassName": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "showHomeIcon": {
+      "type": "boolean",
+      "default": false
+    },
+    "maxItems": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 20
+    },
+    "ariaLabel": {
+      "type": "string",
+      "default": "Breadcrumb navigation",
+      "maxLength": 200
+    }
+  }
+}

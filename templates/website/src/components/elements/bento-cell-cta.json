@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_elements_bento_cell_ctas",
+  "info": {
+    "name": "bento-cell-cta",
+    "displayName": "Bento Cell CTA",
+    "icon": "cursor",
+    "description": "CTA button/link for bento grid cells"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "href": {
+      "type": "string",
+      "required": true,
+      "regex": "^https://.*$"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "ghost",
+        "link"
+      ],
+      "default": "link"
+    },
+    "icon": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "iconPosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "ariaLabel": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200
+    }
+  }
+}

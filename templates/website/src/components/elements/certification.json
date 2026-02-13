@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_elements_certifications",
+  "info": {
+    "name": "certification",
+    "displayName": "Certification",
+    "icon": "check-circle",
+    "description": "Trust badge or certification with logo and optional link"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "logo": {
+      "type": "string",
+      "required": true,
+      "regex": "^https://.*$"
+    },
+    "alt": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "href": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "year": {
+      "type": "string",
+      "required": false,
+      "maxLength": 10
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    }
+  }
+}

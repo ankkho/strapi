@@ -1,0 +1,136 @@
+{
+  "collectionName": "components_elements_bento_cells",
+  "info": {
+    "name": "bento-cell",
+    "displayName": "Bento Cell",
+    "icon": "apps",
+    "description": "Individual cell in bento grid with media, text, and CTA"
+  },
+  "options": {},
+  "attributes": {
+    "cellId": {
+      "type": "string",
+      "required": true,
+      "regex": "^[a-z][a-z0-9-]*$",
+      "maxLength": 50
+    },
+    "title": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "maxLength": 1000
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.bento-cell-media",
+      "required": false
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.bento-cell-cta",
+      "required": false
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "bg-muted",
+      "maxLength": 100
+    },
+    "textColor": {
+      "type": "string",
+      "default": "text-foreground",
+      "maxLength": 100
+    },
+    "colSpan": {
+      "type": "enumeration",
+      "enum": [
+        "1",
+        "2",
+        "3"
+      ],
+      "default": "1"
+    },
+    "rowSpan": {
+      "type": "enumeration",
+      "enum": [
+        "1",
+        "2",
+        "3"
+      ],
+      "default": "1"
+    },
+    "hoverEffect": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "lift",
+        "glow",
+        "scale",
+        "tilt"
+      ],
+      "default": "none"
+    },
+    "href": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "contentAlign": {
+      "type": "enumeration",
+      "enum": [
+        "start",
+        "center",
+        "end"
+      ],
+      "default": "start"
+    },
+    "contentAlignY": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "center",
+        "bottom"
+      ],
+      "default": "bottom"
+    },
+    "padding": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "default": "md"
+    },
+    "borderRadius": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "full"
+      ],
+      "default": "lg"
+    },
+    "mobileOrder": {
+      "type": "integer",
+      "required": false,
+      "min": 1,
+      "max": 8
+    }
+  }
+}

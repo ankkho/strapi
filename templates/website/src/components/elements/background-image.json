@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_elements_background_images",
+  "info": {
+    "name": "background-image",
+    "displayName": "Background Image",
+    "icon": "picture",
+    "description": "Background image configuration with overlay and blur options"
+  },
+  "options": {},
+  "attributes": {
+    "src": {
+      "type": "string",
+      "required": true,
+      "regex": "^https://.*$"
+    },
+    "alt": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "objectFit": {
+      "type": "enumeration",
+      "enum": [
+        "cover",
+        "contain",
+        "fill",
+        "none",
+        "scale-down"
+      ],
+      "default": "cover"
+    },
+    "objectPosition": {
+      "type": "string",
+      "default": "center",
+      "maxLength": 100
+    },
+    "overlay": {
+      "type": "string",
+      "default": "bg-black/50",
+      "maxLength": 100
+    },
+    "blur": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

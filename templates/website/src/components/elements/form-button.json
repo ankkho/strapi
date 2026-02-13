@@ -1,0 +1,66 @@
+{
+  "collectionName": "components_elements_form_buttons",
+  "info": {
+    "name": "form-button",
+    "displayName": "Form Button",
+    "icon": "cursor",
+    "description": "Submit button configuration for forms"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "ghost"
+      ],
+      "default": "primary"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "default": "md"
+    },
+    "icon": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "iconPosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right"
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "ariaLabel": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200
+    },
+    "loadingLabel": {
+      "type": "string",
+      "default": "Submitting...",
+      "maxLength": 100
+    }
+  }
+}

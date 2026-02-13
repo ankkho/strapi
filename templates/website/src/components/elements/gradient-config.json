@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_elements_gradient_configs",
+  "info": {
+    "name": "gradient-config",
+    "displayName": "Gradient Config",
+    "icon": "paint-brush",
+    "description": "Gradient background configuration with animation support"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "linear",
+        "radial",
+        "conic"
+      ],
+      "default": "linear",
+      "required": true
+    },
+    "direction": {
+      "type": "string",
+      "default": "to bottom right",
+      "maxLength": 100
+    },
+    "colors": {
+      "type": "json",
+      "required": true
+    },
+    "animated": {
+      "type": "boolean",
+      "default": false
+    },
+    "animationDuration": {
+      "type": "integer",
+      "default": 10,
+      "min": 1,
+      "max": 60
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_elements_feature_items",
+  "info": {
+    "name": "feature-item",
+    "displayName": "Feature Item",
+    "icon": "check",
+    "description": "Feature list item with icon, title, and description"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    }
+  }
+}

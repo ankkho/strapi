@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_elements_rating_aggregates",
+  "info": {
+    "name": "rating-aggregate",
+    "displayName": "Rating Aggregate",
+    "icon": "chart-bubble",
+    "description": "Aggregated rating display from review sources"
+  },
+  "options": {},
+  "attributes": {
+    "average": {
+      "type": "decimal",
+      "required": true,
+      "min": 1,
+      "max": 5
+    },
+    "totalReviews": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "source": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "sourceLogo": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "href": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    }
+  }
+}

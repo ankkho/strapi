@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_elements_multi_step_configs",
+  "info": {
+    "name": "multi-step-config",
+    "displayName": "Multi-Step Config",
+    "icon": "layer",
+    "description": "Multi-step form configuration with progress indicators"
+  },
+  "options": {},
+  "attributes": {
+    "steps": {
+      "type": "json",
+      "required": true
+    },
+    "showStepIndicators": {
+      "type": "boolean",
+      "default": true
+    },
+    "showStepNumbers": {
+      "type": "boolean",
+      "default": true
+    },
+    "prevLabel": {
+      "type": "string",
+      "default": "Previous",
+      "maxLength": 50
+    },
+    "nextLabel": {
+      "type": "string",
+      "default": "Next",
+      "maxLength": 50
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    }
+  }
+}

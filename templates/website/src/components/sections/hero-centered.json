@@ -1,0 +1,171 @@
+{
+  "collectionName": "components_sections_hero_centereds",
+  "info": {
+    "name": "hero-centered",
+    "displayName": "Hero Centered",
+    "icon": "layout",
+    "description": "Centered hero section with variants: minimal, cta-heavy, background-image, gradient"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "minimal",
+        "cta-heavy",
+        "background-image",
+        "gradient"
+      ],
+      "default": "minimal",
+      "required": true
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-centered-content",
+      "required": true
+    },
+    "primaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-cta",
+      "required": false
+    },
+    "secondaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-cta",
+      "required": false
+    },
+    "tertiaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-cta",
+      "required": false
+    },
+    "quaternaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-cta",
+      "required": false
+    },
+    "backgroundImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.background-image",
+      "required": false
+    },
+    "gradient": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.gradient-config",
+      "required": false
+    },
+    "height": {
+      "type": "enumeration",
+      "enum": [
+        "auto",
+        "screen",
+        "half",
+        "two-thirds",
+        "third"
+      ],
+      "default": "auto"
+    },
+    "minHeight": {
+      "type": "integer",
+      "default": 400,
+      "min": 0,
+      "max": 2000
+    },
+    "contentMaxWidth": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl",
+        "3xl",
+        "4xl"
+      ],
+      "default": "3xl"
+    },
+    "headlineSize": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl",
+        "3xl"
+      ],
+      "default": "xl"
+    },
+    "headlineColor": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "padding": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "default": "lg"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "textColor": {
+      "type": "enumeration",
+      "enum": [
+        "dark",
+        "light",
+        "auto"
+      ],
+      "default": "auto"
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "contentClassName": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "ctaClassName": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "sectionId": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "ariaLabel": {
+      "type": "string",
+      "default": "Hero section",
+      "maxLength": 200
+    },
+    "ariaLabelledBy": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "structuredData": {
+      "type": "json",
+      "required": false
+    }
+  }
+}

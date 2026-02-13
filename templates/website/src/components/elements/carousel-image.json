@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_elements_carousel_images",
+  "info": {
+    "name": "carousel-image",
+    "displayName": "Carousel Image",
+    "icon": "picture",
+    "description": "Background image for carousel slides"
+  },
+  "options": {},
+  "attributes": {
+    "src": {
+      "type": "string",
+      "required": true,
+      "regex": "^https://.*$"
+    },
+    "alt": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "objectFit": {
+      "type": "enumeration",
+      "enum": [
+        "cover",
+        "contain",
+        "fill",
+        "none",
+        "scale-down"
+      ],
+      "default": "cover"
+    },
+    "objectPosition": {
+      "type": "string",
+      "default": "center",
+      "maxLength": 100
+    }
+  }
+}

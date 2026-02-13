@@ -1,0 +1,82 @@
+{
+  "collectionName": "components_elements_bento_cell_medias",
+  "info": {
+    "name": "bento-cell-media",
+    "displayName": "Bento Cell Media",
+    "icon": "picture",
+    "description": "Media content for bento grid cells (image, video, icon)"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "video",
+        "icon",
+        "none"
+      ],
+      "default": "image",
+      "required": true
+    },
+    "src": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "alt": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "maxLength": 200
+    },
+    "icon": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "iconSize": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "default": "lg"
+    },
+    "iconColor": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "muted": {
+      "type": "boolean",
+      "default": true
+    },
+    "objectFit": {
+      "type": "enumeration",
+      "enum": [
+        "cover",
+        "contain",
+        "fill",
+        "none",
+        "scale-down"
+      ],
+      "default": "cover"
+    },
+    "objectPosition": {
+      "type": "string",
+      "default": "center",
+      "maxLength": 100
+    }
+  }
+}

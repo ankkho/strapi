@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_elements_hero_lead_capture_contents",
+  "info": {
+    "name": "hero-lead-capture-content",
+    "displayName": "Hero Lead Capture Content",
+    "icon": "quote",
+    "description": "Text content block for HeroLeadCapture component"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "eyebrow": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "subheadline": {
+      "type": "string",
+      "required": false,
+      "maxLength": 300
+    },
+    "body": {
+      "type": "text",
+      "required": false,
+      "maxLength": 2000
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_elements_form_configs",
+  "info": {
+    "name": "form-config",
+    "displayName": "Form Config",
+    "icon": "file",
+    "description": "Form configuration with submit button, privacy text, and messages"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "submitButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.form-button",
+      "required": false
+    },
+    "privacyText": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "privacyLink": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "successMessage": {
+      "type": "string",
+      "default": "Thank you! We'll be in touch soon.",
+      "maxLength": 500
+    },
+    "errorMessage": {
+      "type": "string",
+      "default": "Something went wrong. Please try again.",
+      "maxLength": 500
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    }
+  }
+}

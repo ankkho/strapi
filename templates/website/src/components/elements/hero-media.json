@@ -1,0 +1,81 @@
+{
+  "collectionName": "components_elements_hero_medias",
+  "info": {
+    "name": "hero-media",
+    "displayName": "Hero Media",
+    "icon": "picture",
+    "description": "Image or video media configuration for HeroSplit"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "video"
+      ],
+      "default": "image",
+      "required": true
+    },
+    "src": {
+      "type": "string",
+      "required": true,
+      "regex": "^https://.*$"
+    },
+    "alt": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200
+    },
+    "width": {
+      "type": "integer",
+      "required": false,
+      "min": 1,
+      "max": 10000
+    },
+    "height": {
+      "type": "integer",
+      "required": false,
+      "min": 1,
+      "max": 10000
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "muted": {
+      "type": "boolean",
+      "default": true
+    },
+    "poster": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "objectFit": {
+      "type": "enumeration",
+      "enum": [
+        "cover",
+        "contain",
+        "fill",
+        "none",
+        "scale-down"
+      ],
+      "default": "cover"
+    },
+    "objectPosition": {
+      "type": "string",
+      "default": "center",
+      "maxLength": 50
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    }
+  }
+}

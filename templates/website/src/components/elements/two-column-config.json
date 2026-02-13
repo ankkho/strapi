@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_elements_two_column_configs",
+  "info": {
+    "name": "two-column-config",
+    "displayName": "Two Column Config",
+    "icon": "layout",
+    "description": "Configuration for two-column-form variant with features or image"
+  },
+  "options": {},
+  "attributes": {
+    "featuresTitle": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.feature-item",
+      "required": false,
+      "max": 10
+    },
+    "imageSrc": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "imageAlt": {
+      "type": "string",
+      "required": false,
+      "maxLength": 200
+    },
+    "contentPosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "left"
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_elements_carousel_videos",
+  "info": {
+    "name": "carousel-video",
+    "displayName": "Carousel Video",
+    "icon": "play",
+    "description": "Background video for carousel slides (autoplay, muted, loop)"
+  },
+  "options": {},
+  "attributes": {
+    "src": {
+      "type": "string",
+      "required": true,
+      "regex": "^https://.*$"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "video/mp4",
+        "video/webm",
+        "video/ogg"
+      ],
+      "default": "video/mp4"
+    },
+    "poster": {
+      "type": "string",
+      "required": false,
+      "regex": "^https://.*$"
+    },
+    "objectFit": {
+      "type": "enumeration",
+      "enum": [
+        "cover",
+        "contain",
+        "fill",
+        "none",
+        "scale-down"
+      ],
+      "default": "cover"
+    },
+    "objectPosition": {
+      "type": "string",
+      "default": "center",
+      "maxLength": 100
+    },
+    "alt": {
+      "type": "string",
+      "default": "Background video",
+      "maxLength": 200
+    }
+  }
+}

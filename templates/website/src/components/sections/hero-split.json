@@ -1,0 +1,168 @@
+{
+  "collectionName": "components_sections_hero_splits",
+  "info": {
+    "name": "hero-split",
+    "displayName": "Hero Split",
+    "icon": "layout",
+    "description": "Hero section with split layout: image-left, image-right, video-left, video-right, diagonal"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "image-left",
+        "image-right",
+        "video-left",
+        "video-right",
+        "diagonal"
+      ],
+      "default": "image-right",
+      "required": true
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-split-content",
+      "required": true
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-media",
+      "required": true
+    },
+    "primaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-cta",
+      "required": false
+    },
+    "secondaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-cta",
+      "required": false
+    },
+    "splitRatio": {
+      "type": "enumeration",
+      "enum": [
+        "equal",
+        "content-wide",
+        "media-wide"
+      ],
+      "default": "equal"
+    },
+    "contentAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "center",
+        "bottom"
+      ],
+      "default": "center"
+    },
+    "height": {
+      "type": "enumeration",
+      "enum": [
+        "auto",
+        "screen",
+        "half",
+        "two-thirds",
+        "third"
+      ],
+      "default": "auto"
+    },
+    "minHeight": {
+      "type": "integer",
+      "default": 400,
+      "min": 0,
+      "max": 2000
+    },
+    "reverseOnMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "stackOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "headlineSize": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl",
+        "3xl"
+      ],
+      "default": "xl"
+    },
+    "padding": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "default": "lg"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "textColor": {
+      "type": "enumeration",
+      "enum": [
+        "dark",
+        "light",
+        "auto"
+      ],
+      "default": "auto"
+    },
+    "diagonalAngle": {
+      "type": "integer",
+      "default": 8,
+      "min": 0,
+      "max": 45
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "contentClassName": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "mediaClassName": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "sectionId": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "ariaLabel": {
+      "type": "string",
+      "default": "Hero split section",
+      "maxLength": 200
+    },
+    "ariaLabelledBy": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    },
+    "structuredData": {
+      "type": "json",
+      "required": false
+    }
+  }
+}

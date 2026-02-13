@@ -1,0 +1,86 @@
+{
+  "collectionName": "components_elements_carousel_slides",
+  "info": {
+    "name": "carousel-slide",
+    "displayName": "Carousel Slide",
+    "icon": "slideshow",
+    "description": "Individual carousel slide with image/video background and content"
+  },
+  "options": {},
+  "attributes": {
+    "slideId": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.carousel-image",
+      "required": false
+    },
+    "video": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.carousel-video",
+      "required": false
+    },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "subheadline": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    },
+    "badge": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "primaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-cta",
+      "required": false
+    },
+    "secondaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-cta",
+      "required": false
+    },
+    "overlay": {
+      "type": "string",
+      "default": "bg-black/50",
+      "maxLength": 100
+    },
+    "textAlign": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "center"
+    },
+    "contentAlignY": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "center",
+        "bottom"
+      ],
+      "default": "center"
+    },
+    "className": {
+      "type": "string",
+      "required": false,
+      "maxLength": 500
+    }
+  }
+}
