@@ -7,6 +7,11 @@
     "description": "Individual customer review/testimonial with rating"
   },
   "options": {},
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
   "attributes": {
     "name": {
       "type": "string",

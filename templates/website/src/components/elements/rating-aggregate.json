@@ -7,6 +7,11 @@
     "description": "Aggregated rating display from review sources"
   },
   "options": {},
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
   "attributes": {
     "average": {
       "type": "decimal",

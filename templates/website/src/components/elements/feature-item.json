@@ -7,6 +7,11 @@
     "description": "Feature list item with icon, title, and description"
   },
   "options": {},
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
   "attributes": {
     "icon": {
       "type": "string",

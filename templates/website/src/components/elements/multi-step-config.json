@@ -7,6 +7,11 @@
     "description": "Multi-step form configuration with progress indicators"
   },
   "options": {},
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
   "attributes": {
     "steps": {
       "type": "json",

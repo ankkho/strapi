@@ -7,6 +7,11 @@
     "description": "Configuration for two-column-form variant with features or image"
   },
   "options": {},
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
   "attributes": {
     "featuresTitle": {
       "type": "string",

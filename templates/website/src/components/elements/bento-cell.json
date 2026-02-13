@@ -7,6 +7,11 @@
     "description": "Individual cell in bento grid with media, text, and CTA"
   },
   "options": {},
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
   "attributes": {
     "cellId": {
       "type": "string",

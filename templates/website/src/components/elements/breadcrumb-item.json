@@ -7,6 +7,11 @@
     "description": "Individual breadcrumb navigation item with label, URL, and optional icon"
   },
   "options": {},
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
   "attributes": {
     "label": {
       "type": "string",

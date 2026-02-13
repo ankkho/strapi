@@ -7,6 +7,11 @@
     "description": "Centered hero section with variants: minimal, cta-heavy, background-image, gradient"
   },
   "options": {},
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
   "attributes": {
     "variant": {
       "type": "enumeration",

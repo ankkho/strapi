@@ -7,6 +7,11 @@
     "description": "Bento grid hero section with flexible cell layouts (3-grid, 4-grid, mosaic, interactive)"
   },
   "options": {},
+  "pluginOptions": {
+    "content-type-builder": {
+      "visible": false
+    }
+  },
   "attributes": {
     "variant": {
       "type": "enumeration",
